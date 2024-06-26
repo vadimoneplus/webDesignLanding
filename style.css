@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  bottom: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  text-transform: capitalize;
+  transition: all 0.4s;
+  font-family: 'Poppins', sans-serif;
+  /* color: #fff; */
+}
+
+html {
+  font-size: 62, 5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+/* убираем полосу прокрутки */
+html::-webkit-scrollbar {
+  background: transparent;
+  width: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+& {
+  --main-color: springgreen;
+  --bg-color-1: #222;
+  --bg-color-2: #111;
+  --text-color-1: #eee;
+  --text-color-2: #fff;
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .8);
+
+  --big-sz: calc(25px + (65 - 25) * ((100vw - 300px) / (1500 - 300)));
+  --medium-sz: calc(16px + (35 - 16) * ((100vw - 300px) / (1500 - 300)));
+  --small-sz: calc(12px + (18 - 12) * ((100vw - 300px) / (1500 - 300)));
+
+
+}
+
+body {
+  background: var(--bg-color-1);
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.header {
+  /* position: fixed; */
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background: var(--bg-color-2);
+  padding: 1.5rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+  font-size: var(--medium-sz);
+  font-weight: 800;
+  color: var(--text-color-2);
+}
+
+.header .icons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.header .icons div {
+  width: calc(27px + (40 - 27) * ((100vw - 300px) / (1500 - 300)));
+  height: calc(27px + (40 - 27) * ((100vw - 300px) / (1500 - 300)));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: var(--small-sz);
+  color: var(--text-color-1);
+  background: var(--bg-color-1);
+}
