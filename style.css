@@ -61,6 +61,21 @@ body.active {
 section {
   padding: 2rem 9%;
 }
+.btn{
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3.5rem;
+  color: var(--text-color-1);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: var(--main-color);
+  font-size: var(--small-sz);
+}
+
+.btn:hover{
+letter-spacing: 0.3rem;
+}
+
 
 .header {
   position: fixed;
@@ -215,11 +230,46 @@ section {
   cursor: pointer;
 }
 
+/* home section */
+.home{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
+  background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(images/bg-home-page.jpg), center/cover no-repeat; 
+}
+.home .content{
+  max-width: 100rem;
+  color: var(--text-color-2);
+  background: var(--bg-color-2);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  padding: 3rem 5rem;
+  border-radius: 1.5rem;
+}
+
+.home .content h2{
+  color: var(--text-color-2);
+  font-size: var(--big-sz);
+}
+
+.home .content h2 span{
+  color: var(--main-color);
+}
+
+.home .content p{
+  color: var(--text-color-1);
+  font-size: var(--small-sz);
+text-align: justify;
+}
+
+
 @media (max-width: 991px) {
   .header {
     padding: 1.5rem 2rem;
   }
-  
+
   .header .navbar {
     right: 2rem;
   }
