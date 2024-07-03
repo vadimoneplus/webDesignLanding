@@ -504,6 +504,66 @@ color: var(--text-color-2);
   color: var(--main-color);
 }
 
+
+.review .box-container{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.review .box-container .box{
+ flex: 1 1 30rem;
+ box-shadow: var(--box-shadow);
+ background: var(--bg-color-2);
+ padding: 2.5rem;
+ border-radius: 0.5rem;
+}
+
+.review .box-container .box .user{
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.review .box-container .box .user img{
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.review .box-container .box .user .fa-quote-right{
+color: var(--main-color);
+font-size: var(--big-sz);
+margin-left: auto;
+}
+
+.review .box-container .box .user .info h3{
+  color: var(--text-color-1);
+  font-size: var(--small-sz);
+  padding-bottom: 0.5rem;
+}
+
+.review .box-container .box .user .info .stars{
+  color: var(--main-color);
+  font-size: var(--small-sz);
+}
+
+.review .box-container .box .user .info span{
+color: var(--text-color-1);
+font-size: var(--small-sz);
+}
+
+.review .box-container .box p{
+  color: var(--text-color-2);
+  font-size: var(--small-sz);
+  padding-bottom: 1rem;
+  line-height: 1.5;
+}
+
 @media (max-width: 991px) {
   .header {
     padding: 1.5rem 2rem;
