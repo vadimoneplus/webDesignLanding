@@ -475,59 +475,59 @@ section {
   color: var(--text-color-2);
   padding: 1rem 0;
   margin: 1rem 0;
-font-size: var(--medium-sz);
+  font-size: var(--medium-sz);
 }
 
-.pricing .box-container .box .price{
+.pricing .box-container .box .price {
   font-size: var(--medium-sz);
   color: var(--text-color-1);
   font-weight: 800;
 }
 
-.pricing .box-container .box .pricei{
+.pricing .box-container .box .pricei {
   color: var(--text-color-2);
   font-size: var(--small-sz);
 }
 
-.pricing .box-container .box ul{
+.pricing .box-container .box ul {
   padding: 1rem 0;
 }
 
-.pricing .box-container .box ul li{
-padding: 0.7rem 0;
-font-size: var(--small-sz);
-color: var(--text-color-2);
+.pricing .box-container .box ul li {
+  padding: 0.7rem 0;
+  font-size: var(--small-sz);
+  color: var(--text-color-2);
 }
 
-.pricing .box-container .box ul li i{
+.pricing .box-container .box ul li i {
   padding-right: 0.5rem;
   color: var(--main-color);
 }
 
 
-.review .box-container{
+.review .box-container {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
-.review .box-container .box{
- flex: 1 1 30rem;
- box-shadow: var(--box-shadow);
- background: var(--bg-color-2);
- padding: 2.5rem;
- border-radius: 0.5rem;
+.review .box-container .box {
+  flex: 1 1 30rem;
+  box-shadow: var(--box-shadow);
+  background: var(--bg-color-2);
+  padding: 2.5rem;
+  border-radius: 0.5rem;
 }
 
-.review .box-container .box .user{
+.review .box-container .box .user {
   display: flex;
   align-items: center;
   padding-bottom: 1rem;
 }
 
-.review .box-container .box .user img{
+.review .box-container .box .user img {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
@@ -535,34 +535,109 @@ color: var(--text-color-2);
   margin-right: 1rem;
 }
 
-.review .box-container .box .user .fa-quote-right{
-color: var(--main-color);
-font-size: var(--big-sz);
-margin-left: auto;
+.review .box-container .box .user .fa-quote-right {
+  color: var(--main-color);
+  font-size: var(--big-sz);
+  margin-left: auto;
 }
 
-.review .box-container .box .user .info h3{
+.review .box-container .box .user .info h3 {
   color: var(--text-color-1);
   font-size: var(--small-sz);
   padding-bottom: 0.5rem;
 }
 
-.review .box-container .box .user .info .stars{
+.review .box-container .box .user .info .stars {
   color: var(--main-color);
   font-size: var(--small-sz);
 }
 
-.review .box-container .box .user .info span{
-color: var(--text-color-1);
-font-size: var(--small-sz);
+.review .box-container .box .user .info span {
+  color: var(--text-color-1);
+  font-size: var(--small-sz);
 }
 
-.review .box-container .box p{
+.review .box-container .box p {
   color: var(--text-color-2);
   font-size: var(--small-sz);
   padding-bottom: 1rem;
   line-height: 1.5;
 }
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: var(--small-sz);
+  color: var(--text-color-1);
+  background: var(--bg-color-2);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  margin: 0.7rem 0;
+  text-transform: none;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  height: 10rem;
+  resize: none;
+}
+
+.footer {
+  background: var(--bg-color-2);
+}
+
+.footer .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer .box-container .box {
+  flex: 1 1 25rem;
+}
+
+.footer .box-container .box h4 {
+  font-size: var(--small-sz);
+  color: var(--text-color-1);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--text-color-2);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--main-color);
+  transition: 0.5s;
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 1.5rem;
+}
+
+
+
 
 @media (max-width: 991px) {
   .header {
@@ -582,4 +657,7 @@ font-size: var(--small-sz);
     right: 2rem;
     width: 15rem;
   }
+    .contact form .input-box input{
+      width: 100%;
+    }
 }
